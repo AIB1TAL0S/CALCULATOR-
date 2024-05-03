@@ -1,0 +1,51 @@
+#calculator{
+    font-family: arial, sans serif;
+    border-radius: 15px;
+    background-color: #e0e0e0; /* Light grey background */
+    max-width: 500px;
+    overflow: hidden;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1), -10px -10px 30px rgba(255,255,255,0.7); /* Neumorphic shadow */
+}
+
+#display {
+    width: 100%;
+    padding: 0px; /* Corrected the syntax error here */
+    font-size: 5rem;
+    text-align: left; /* Corrected the property name to be lowercase */
+    border: none;
+    background: #e0e0e0; /* Assuming a light grey background for neumorphism */
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1), -10px -10px 30px rgba(255,255,255,0.7); /* Neumorphic shadow */
+    color: black
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    overflow: hidden;
+    padding: 15px;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1), inset -5px -5px 10px rgba(255,255,255,0.7); /* Neumorphic shadow */
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 200px; /* Rounded corners for a modern touch */
+    border: 2px solid #000; /* Slightly thicker border for a more defined edge */
+    color: black; /* Text color remains the same for contrast */
+    font-family: 'Roboto', sans-serif; /* Modern sans-serif font for a clean look */
+    font-size: 18px; /* Slightly larger font size for better readability */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    background-color: #e0e0e0; /* Light grey background */
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1), -10px -10px 30px rgba(255,255,255,0.7); /* Neumorphic shadow */
+}
+
+button:hover {
+    transform: translateY(-2px); /* Slight lift on hover for a modern interactive feel */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1), -5px -5px 10px rgba(255,255,255,0.7); /* Neumorphic shadow on hover */
+}
+
+.operator-btn {
+    background-color: orange; /* Example color for operator buttons */
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1), -10px -10px 30px rgba(255,255,255,0.7); /* Neumorphic shadow */
+}
